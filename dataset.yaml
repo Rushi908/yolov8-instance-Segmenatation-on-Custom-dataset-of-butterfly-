@@ -1,0 +1,5 @@
+train: D:\Projects Rushi\da\train
+val: D:\Projects Rushi\da\test
+
+nc: 1
+names: ["butterfly"]

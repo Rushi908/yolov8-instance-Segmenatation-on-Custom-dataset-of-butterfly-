@@ -1,0 +1,10 @@
+python ==3.10
+
+train model
+yolo task=segment mode=train model=yolov8m-seg.pt imgsz=640 data=dataset.yaml epochs=100 batch=8 name=yolov8m-seg exist_ok=True
+
+for image
+yolo model=best.pt mode=predict source=1.png name=yolov8m_seg_infer_valimages exist_ok=True
+
+for video
+yolo model=best.pt mode=predict source=4.mp4 name=runs_medium exist_ok=True show=True
